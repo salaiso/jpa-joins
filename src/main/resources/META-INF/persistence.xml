@@ -3,10 +3,11 @@
 
 	<persistence-unit name="ds">
 		<jta-data-source>jdbc/ravends</jta-data-source>
+		<properties>
+			<property name="eclipselink.logging.level.sql" value="FINE" />
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.logging.level.cache"
+				value="FINE" />
+		</properties>
 	</persistence-unit>
-	
-	<persistence-unit name="replication">
-		<jta-data-source>jdbc/replicationds</jta-data-source>
-	</persistence-unit>
-	
 </persistence>
