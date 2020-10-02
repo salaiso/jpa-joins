@@ -1,0 +1,12 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="1.0">
+
+	<persistence-unit name="ds">
+		<jta-data-source>jdbc/ravends</jta-data-source>
+	</persistence-unit>
+	
+	<persistence-unit name="replication">
+		<jta-data-source>jdbc/replicationds</jta-data-source>
+	</persistence-unit>
+	
+</persistence>
